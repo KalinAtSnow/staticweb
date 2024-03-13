@@ -7,12 +7,12 @@
 Welcome to your new app.
 
 <button @onclick=click>click me!</button>
-@times clicked
+<p>@times clicked</p>
 
 @code{
     string result;
-    int times;
-    void click() => times++
+    int times =0;
+    void click() => times++;
 
     protected override async Task OnInitializedAsync(){
         var httpClient=new HttpClient();
